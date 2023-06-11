@@ -33,10 +33,10 @@ void InsertionSort(Dados L[MAX]){
     int Cont1, Cont2, Min;
     
     for(Cont1=1;Cont1<MAX;Cont1++){
-        Cont2 = Cont1; //Próximo item da lista não ordenada
+        Cont2 = Cont1; //Cont2 recebe o próximo item da lista que não está ordenado;
+                
+        //Então ele move o próximo item da lista que não está ordenado para a parte da lista que está ordenada
         
-        //Move o próximo item da lista não ordenada para
-        //a posição correta na lista ordenada
         while (Cont2 > 0 && L[Cont2].Valor < L[Cont2-1].Valor ) {        
             //Move o valor encontrado pra lista ordenada
             Swap(L, Cont2, Cont2-1);
